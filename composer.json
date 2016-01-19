@@ -1,5 +1,5 @@
 {
-    "name": "dragonfire1119/cors-lumen",
+    "name": "razor9999/cors-lumen",
     "description": "Cross-origin resource sharing (CORS) middleware & ServiceProvider for Lumen micro-framework.",
     "keywords": [
         "corslumen",
@@ -11,10 +11,10 @@
         "preflight"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/dragonfire1119/cors-lumen",
+    "homepage": "https://github.com/razor9999/cors-lumen",
     "authors": [
         {
-            "name": "dragonfire1119"
+            "name": "razor9999"
         }
     ],
     "require": {
