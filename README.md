@@ -1,14 +1,14 @@
 CORS for Lumen
 ==========
 
-[![Latest Stable Version](https://poser.pugx.org/dragonfire1119/cors-lumen/v/stable)](https://packagist.org/packages/dragonfire1119/cors-lumen)
-[![License](https://poser.pugx.org/dragonfire1119/cors-lumen/license)](https://packagist.org/packages/dragonfire1119/cors-lumen)
+[![Latest Stable Version](https://poser.pugx.org/razor9999/cors-lumen/v/stable)](https://packagist.org/packages/razor9999/cors-lumen)
+[![License](https://poser.pugx.org/razor9999/cors-lumen/license)](https://packagist.org/packages/razor9999/cors-lumen)
 
 [Cross-origin resource sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) (CORS) Middleware for [Lumen micro-framework](http://lumen.laravel.com/).
 
-### Install with [Composer](https://packagist.org/packages/dragonfire1119/cors-lumen) ###
+### Install with [Composer](https://packagist.org/packages/razor9999/cors-lumen) ###
 
-Run `composer require "dragonfire1119/cors-lumen:dev-master"` to install cors-lumen.
+Run `composer require "razor9999/cors-lumen:dev-master"` to install cors-lumen.
 
 ## Usage ##
 
@@ -16,12 +16,12 @@ Run `composer require "dragonfire1119/cors-lumen:dev-master"` to install cors-lu
 
 If you want to allow OPTIONS method then your going to need to enable the CorsServiceProvider in the `bootstrap/app.php` file.
 ```php
-$app->register('Dragonfire1119\Cors\Providers\CorsServiceProvider');
+$app->register('razor9999\Cors\Providers\CorsServiceProvider');
 ```
 
 ### Global CORS ###
 
-If you want CORS enabled for every HTTP request to your application, simply list the middleware class `Dragonfire1119\Cors\Middleware\CorsMiddleware` in the $app->middleware() call of your `bootstrap/app.php` file.
+If you want CORS enabled for every HTTP request to your application, simply list the middleware class `razor9999\Cors\Middleware\CorsMiddleware` in the $app->middleware() call of your `bootstrap/app.php` file.
 
 ### CORS for Routes ###
 
@@ -29,7 +29,7 @@ If you would like to enable CORS to specific routes, you should first assign the
 
 ```php
 $app->routeMiddleware([
-	'cors' => 'Dragonfire1119\Cors\Middleware\CorsMiddleware',
+	'cors' => 'razor9999\Cors\Middleware\CorsMiddleware',
 ]);
 ```
 
